@@ -14,12 +14,13 @@ public class Main {
         // Main loop for the menu system
         while (running) {
             // Display menu options
-            System.out.println("--- Student Management System ---");
+            System.out.println("=====STUDENT MANAGEMENT SYSTEM=====");
             System.out.println("1. Add Student");
             System.out.println("2. Edit Student");
             System.out.println("3. Remove Student");
             System.out.println("4. Display Students");
             System.out.println("5. Exit");
+            System.out.println("===================================");
             System.out.print("Enter choice: ");
             String choice = scanner.nextLine(); // Read user choice
             switch (choice) {
@@ -52,7 +53,7 @@ public class Main {
 
     private static void addStudent(StudentManager manager, Scanner scanner) {
         try {
-            System.out.print("Enter name: ");
+            System.out.print("Enter the student's full name: ");
             String name = scanner.nextLine();
             System.out.print("Enter ID: ");
             String id = scanner.nextLine();
